@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        th,td{ padding-bottom:10px;
+               text-align:left;
+        }
+        legend{ font-weight: bold;
+                font-size:30px;
+                color:blue;
+        }
+   hr{ width:720px;}
+   h1 {color:darkred;}
+        
+    </style>
+</head>
+<body>
+    <center>
+    <form>
+    <div>
+    
+<img src="https://www.mponline.gov.in/Quick%20Links/PortalImages/MPPOnline-Logo-Hi.png">
+        <h1> Registration Form</h1>
+        <hr />
+        
+            <legend>Personal Information</legend>
+          <table>
+            <tr>
+                <td> First Name:-</td>
+                <td><input type="text" class="form-control" ></td>
+                <td> DOB:-</td>
+                <td><input type="date"  class="form-control"></td>
+                <td> Nationality</td>
+                <td> 
+                    <section>
+                        <select class="form-control" id="nationality">
+                            <option value="India">India</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Nepal">Nepal</option>
+                            <option value="India">Pakistn</option>
+                            
+                        </select>
+                    </section>
+                </td>
+            </tr>
+            <tr>
+                <td> Middle Name:-</td>
+                <td><input type="text" class="form-control" ></td>
+                <td>Gender:-</td>
+                <td colspan="2">
+                    <input type="radio" value="Gender" name="b"> Male
+                    <input type="radio" value="Gender" name="b"> Female
+                    <input type="radio" value="Gender" name="b"> Other
+                </td>
+            </tr>
+            <tr>
+                <th> Last Name:-</th>
+                <td> <input type="text" class="form-control" ></td>
+                <th> Father Name:-</th>
+                <td colspan="2"><input type="text" class="form-control" > </td>
+            </tr>
+            <tr>
+                <th> Email ID:-</th>
+                <td><input type="email" class="form-control" > </td>
+                <th> Mother Name:-</th>
+                <td colspan="2"><input type="text" class="form-control" > </td>
+            </tr>
+              <tr>
+                  <th> Mobile No:-</th>
+                  <td><input type="number" class="form-control" ></td>
+              </tr>
+        </table>
+      </fieldset>
+         
+             <legend>Address</legend>
+             <table>
+                 <tr>
+                     <th class="auto-style1"> House No. & Village Name:-</th>
+                     <td><input type="" class="form-control" > </td>
+                    
+                     <th class="auto-style2"> Post Office:-</th>
+                     <td class="auto-style3"><asp:TextBox ID="TextBox11" runat="server" BorderStyle="Outset" Height="20px"></asp:TextBox> </td>
+                 </tr>
+                 <tr> 
+                     <th class="auto-style1"> District:-</th>
+                     <td>
+                        <section>
+                            <option> </option>
+                        </section>
+                         </td>
+                     <th class="auto-style2">State:- </th>
+                     <td class="auto-style3"><asp:DropDownList ID="DropDownList3" runat="server" BorderStyle="Outset" Height="20px" >
+                         <asp:ListItem>Select</asp:ListItem>
+                         <asp:ListItem>Madhya Pradesh</asp:ListItem>
+                         <asp:ListItem>Maharashtra</asp:ListItem>
+                         <asp:ListItem>Chhattisgarh</asp:ListItem>
+                         <asp:ListItem>Himachal Pradesh</asp:ListItem>
+                         <asp:ListItem>Uttar Pradesh</asp:ListItem>
+                         <asp:ListItem>West Bengal</asp:ListItem>
+                         <asp:ListItem>Tripura</asp:ListItem>
+                         <asp:ListItem>Tamil Nadu</asp:ListItem>
+                         <asp:ListItem>Rajasthan</asp:ListItem>
+                         </asp:DropDownList> </td>
+                     
+                    
+
+                 </tr>
+                 <tr>
+                     <th> PIN Code:-</th>
+                      <td><asp:TextBox ID="TextBox10" runat="server" TextMode="Number"  BorderStyle="Outset" Height="20px"></asp:TextBox> </td>
+                 </tr>
+             </table>
+         </fieldset>
+        <fieldset  style="width:700px; border:outset;">
+            <legend>Document Details </legend>
+            <table>
+                <tr>
+                    <th>Aadhar Card No:-</th>
+                    <td><asp:TextBox ID="TextBox12" runat="server" TextMode="Number" BorderStyle="Outset" Height="20px"></asp:TextBox> </td>
+                     <td><asp:FileUpload ID="FileUpload1" runat="server"  BorderStyle="Outset" Height="20px" ></asp:FileUpload> </td>
+                </tr>
+                <tr>
+                    <th> PAN Card No:-</th>
+                    <td><asp:TextBox ID="TextBox13" runat="server" BorderStyle="Outset" Height="20px"></asp:TextBox> </td>
+                    <td><asp:FileUpload ID="FileUpload2" runat="server" BorderStyle="Outset" Height="20px"></asp:FileUpload> </td>
+                    
+                </tr>
+                <tr>
+                    <th> Photo:-</th>
+                    <td><asp:FileUpload ID="FileUpload3" runat="server" BorderStyle="Outset" Height="20px"></asp:FileUpload> </td>
+
+                </tr>
+                <tr>
+                    <th>Signature</th>
+                    <td><asp:FileUpload ID="FileUpload4" runat="server" BorderStyle="Outset" Height="20px"></asp:FileUpload> </td>
+                </tr>
+            </table>
+        </fieldset>
+         <fieldset  style="width:700px; border:outset;">
+            <legend>Education Details </legend>
+            <table>
+                <tr>
+                    <th >Course</th>
+                    <th style="text-align:center;"> Board / University</th>
+                    <th> Subject</th>
+                    <th> Roll No.</th>
+                    <th> Present %</th>
+                </tr>
+                <tr>
+                    <th>10th</th>
+                    <td><asp:TextBox ID="TextBox14" runat="server"></asp:TextBox></td>
+                    <td><asp:TextBox ID="TextBox15" runat="server" Width="100px"></asp:TextBox></td>
+                    <td><asp:TextBox ID="TextBox16" runat="server" Width="80px" TextMode="Number"></asp:TextBox></td>
+                    <td><asp:TextBox ID="TextBox17" runat="server"  Width="50px" TextMode="Number"></asp:TextBox></td>
+                </tr>
+                <tr>
+                    <th>12th</th>
+                    <td><asp:TextBox ID="TextBox18" runat="server"></asp:TextBox></td>
+                    <td><asp:TextBox ID="TextBox19" runat="server" Width="100px"></asp:TextBox></td>
+                    <td><asp:TextBox ID="TextBox20" runat="server" Width="80px" TextMode="Number"></asp:TextBox></td>
+                    <td><asp:TextBox ID="TextBox21" runat="server"  Width="50px" TextMode="Number"></asp:TextBox></td>
+                </tr>
+                <tr>
+                    <th>Under Graduate</th>
+                    <td><asp:TextBox ID="TextBox22" runat="server"></asp:TextBox></td>
+                    <td><asp:TextBox ID="TextBox23" runat="server" Width="100px"></asp:TextBox></td>
+                    <td><asp:TextBox ID="TextBox24" runat="server" Width="80px" TextMode="Number"></asp:TextBox></td>
+                    <td><asp:TextBox ID="TextBox25" runat="server"  Width="50px" TextMode="Number"></asp:TextBox></td>
+                </tr>
+                <tr>
+                    <th>Post Graduat</th>
+                    <td><asp:TextBox ID="TextBox26" runat="server"></asp:TextBox></td>
+                    <td><asp:TextBox ID="TextBox27" runat="server" Width="100px"></asp:TextBox></td>
+                    <td><asp:TextBox ID="TextBox28" runat="server" Width="80px" TextMode="Number"></asp:TextBox></td>
+                    <td><asp:TextBox ID="TextBox29" runat="server"  Width="50px" TextMode="Number"></asp:TextBox></td>
+                </tr>
+            </table>
+             </fieldset>
+        <fieldset  style="width:700px; border:outset;">
+            <table>
+                <tr>
+                    <th> Password</th>
+                    <td><asp:TextBox ID="TextBox30" runat="server" TextMode="Password"></asp:TextBox> </td>
+                </tr>
+                <tr>
+                    <th> Renter Password</th>
+                    <td> <asp:TextBox ID="TextBox31" runat="server" TextMode="Password"></asp:TextBox></td>
+                </tr>
+            </table>
+        </fieldset>
+         <br />
+
+<asp:Button ID="Button1" runat="server" Text="Submit" Height="30px"></asp:Button> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<asp:Button ID="Button2" runat="server" Text="Reset" Height="30px"></asp:Button>
+        <hr />
+
+   
+
+    </div>
+    </form>
+         </center>
+</body>
+</html>

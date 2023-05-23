@@ -1,0 +1,75 @@
+nav {
+  background-color: #333333;
+  padding: 10px;
+  overflow: hidden;
+  width: 100%;
+ 
+}
+
+a {
+  font-size: 30px;
+  color: white;
+  padding: 30px;
+  text-decoration: none;
+  text-align: center;
+}
+
+a:hover {
+  background-color: hotpink;
+}
+
+input {
+  padding: 10px;
+  width: 300px;
+  font-size: 20px;
+}
+
+.b1 {
+  background-color: #333333;
+  padding-bottom: 8px;
+  border: none;
+}
+
+th {
+  border: 1.5px outset black;
+  width: 20px;
+  border-radius: none;
+  font-size: 20px;
+  border-top: none;
+}
+
+
+.b2 {
+  font-size: 25px;
+  color: red;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 25px;
+}
+
+td {
+  border-collapse: separate;
+  border: 1.5px solid black;
+
+}
+
+h3 {
+  text-align: center;
+}
+
+button {
+  height: 45px;
+  width: 50px;
+}
+
+footer {
+  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
